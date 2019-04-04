@@ -1,6 +1,6 @@
 # TikGaming
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.2.
+TikGaming Gaming Event Website build on Angular 7 held on 9-12 march 19 in evolve Bhubhaneswar link https://tikgaming.tk/
 
 ## Development server
 
