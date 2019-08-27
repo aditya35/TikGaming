@@ -1,0 +1,24 @@
+@media screen and (max-width: 577px){
+    mat-form-field{
+        // width: 75vw;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+    }
+    mat-card{
+        margin-top: 20px;
+    }
+    
+}
+@media screen and (max-width: 987px) and (min-width: 578px){
+    mat-form-field{
+        // width: 75vw;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+    }
+    mat-card{
+        margin-top: 20px;
+    }
+    
+}

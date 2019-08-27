@@ -1,0 +1,15 @@
+<div class="container fixedmargin">
+  <mat-card>
+          <mat-form-field appearance="outline">
+              <mat-select 
+              placeholder="Choose your Game"
+               #game
+               (selectionChange)="gameLink(game.value)"
+              >
+                <mat-option value="csgo">Counter-Strike: Global Offensive</mat-option>
+                <mat-option value="r6">Tom Clancy's Rainbow Six Siege</mat-option>
+              </mat-select>
+            </mat-form-field>
+        <router-outlet></router-outlet>
+  </mat-card>
+</div>

@@ -1,0 +1,23 @@
+@media screen and (min-width: 580px){
+    .cardGroup{
+        margin-top: 10vh;
+    }
+    .fixedmargin{
+        margin-top: 15vh;
+    }
+}
+@media screen and (max-width: 580px){
+    .cardGroup{
+        margin-top: 20px;
+    }
+    .fixedmargin{
+        margin-top: 23%;
+    }
+}
+@media screen and (min-width: 980px){
+    .cardGroup{
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

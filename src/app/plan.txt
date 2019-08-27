@@ -1,0 +1,6 @@
+home , toolbar , sidenav  {
+    homeContent,
+    registeration,
+    rules,
+    Payment
+}

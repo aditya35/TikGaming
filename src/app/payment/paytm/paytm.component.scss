@@ -1,0 +1,35 @@
+@media screen and (max-width: 577px){
+    mat-form-field{
+        // width: 75vw;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+    }
+    mat-card{
+        margin-top: 15vh;
+
+    }
+    
+}
+
+.payBtn{
+    color: white;
+  }
+mat-card{
+    margin-top: 15vh;
+    margin-bottom: 40px;
+
+}
+img{
+    width: 300px;
+    height: 400px;
+}
+@media screen and (min-width: 988px){
+    mat-card{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+}
+

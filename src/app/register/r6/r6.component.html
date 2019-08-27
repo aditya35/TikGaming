@@ -1,0 +1,426 @@
+      <form 
+      #r6form="ngForm"
+       (ngSubmit)="onSubmit(r6form)">
+        <mat-form-field appearance="fill">
+            <mat-label>Team Name</mat-label>
+            <input 
+            matInput 
+            ngModel
+            name="teamname"
+            required
+            #teamname="ngModel"
+            type="text">
+            <mat-error *ngIf="!teamname.valid && teamname.touched">Required</mat-error>
+        </mat-form-field >
+        <mat-form-field appearance="outline">
+          <mat-label>Team leader</mat-label>
+          <input 
+          matInput
+          type="text"
+          ngModel
+          name="p1"
+          required
+          #p1="ngModel"
+          >
+          <mat-error *ngIf="!p1.valid && p1.touched">Required</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-select 
+            placeholder="Rank" 
+            ngModel
+            name="p1rank"
+            required
+            >
+              <mat-option value="Unranked">
+                <div class="row">
+                <span class="col-8">Unranked</span>
+                <span class="col-4">
+                    <img src="./../../../assets/r6rank/unranked.png" width="18px" height="15px">
+                </span>
+                </div>
+              </mat-option>
+              <mat-option value="Copper">
+                <div class="row">
+                  <span class="col-8">Copper</span>
+                  <span class="col-4">
+                      <img src="./../../../assets/r6rank/copper.png" width="20px" height="18px">
+                  </span>
+                  </div>
+              </mat-option>
+                <mat-option value="Bronze">
+                  <div class="row">
+                   <span class="col-8">Bronze</span>
+                   <span class="col-4">
+                     <img src="./../../../assets/r6rank/bronze.png" width="20px" height="18px">
+                   </span>
+                   </div>
+                </mat-option>
+                <mat-option value="Silver">
+                  <div class="row">
+                  <span class="col-8">Silver</span>
+                  <span class="col-4">
+                    <img src="./../../../assets/r6rank/silver.png" width="20px" height="18px">
+                  </span>
+                  </div>
+                 </mat-option>
+                 <mat-option value="Gold">
+                   <div class="row">
+                 <span class="col-8">Gold</span> 
+                 <span class="col-4">
+                     <img src="./../../../assets/r6rank/gold.png" width="20px" height="18px">
+                  </span>
+                  </div>
+                  </mat-option>
+                  <mat-option value="Platinum">
+                    <div class="row">
+                    <span class="col-8">Platinum</span>
+                    <span class="col-4">
+                      <img src="./../../../assets/r6rank/plat.png" width="25px" height="20px">
+                    </span>
+                    </div>
+                  </mat-option>
+                  <mat-option value="Diamond">
+                    <div class="row">
+                      <span class="col-8">Diamond</span>
+                      <span class="col-4">
+                          <img src="./../../../assets/r6rank/diamond.png" width="18px" height="15px">
+                       </span>
+                       </div>
+                   </mat-option>
+            </mat-select>
+          </mat-form-field>
+        <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Phone No.</mat-label>
+          <input 
+          matInput
+          type="tel"
+          required
+          name="phone"
+          ngModel
+          minlength="10"
+          maxlength="10"
+          #phn="ngModel"
+          pattern="[0-9]{0,10}"
+          >
+          <mat-error *ngIf="!phn.valid && phn.touched">Enter a valid Phone Number</mat-error>
+          <mat-hint>Please Make Sure this number has active WhatsApp and sms</mat-hint>
+        </mat-form-field>
+        </p>
+        <mat-form-field appearance="outline">
+          <mat-label>Player 2</mat-label>
+          <input 
+          matInput
+           type="text"
+           ngModel
+           name="p2"
+           #p2="ngModel"
+           required>
+           <mat-error *ngIf="!p2.valid && p2.touched">Required</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-select 
+            placeholder="Rank" 
+            required
+            name="p2rank"
+            ngModel
+            >
+              <mat-option value="Unranked">
+                <div class="row">
+                <span class="col-8">Unranked</span>
+                <span class="col-4">
+                    <img src="./../../../assets/r6rank/unranked.png" width="18px" height="15px">
+                </span>
+                </div>
+              </mat-option>
+              <mat-option value="Copper">
+                <div class="row">
+                  <span class="col-8">Copper</span>
+                  <span class="col-4">
+                      <img src="./../../../assets/r6rank/copper.png" width="20px" height="18px">
+                  </span>
+                  </div>
+              </mat-option>
+                <mat-option value="Bronze">
+                  <div class="row">
+                   <span class="col-8">Bronze</span>
+                   <span class="col-4">
+                     <img src="./../../../assets/r6rank/bronze.png" width="20px" height="18px">
+                   </span>
+                   </div>
+                </mat-option>
+                <mat-option value="Silver">
+                  <div class="row">
+                  <span class="col-8">Silver</span>
+                  <span class="col-4">
+                    <img src="./../../../assets/r6rank/silver.png" width="20px" height="18px">
+                  </span>
+                  </div>
+                 </mat-option>
+                 <mat-option value="Gold">
+                   <div class="row">
+                 <span class="col-8">Gold</span> 
+                 <span class="col-4">
+                     <img src="./../../../assets/r6rank/gold.png" width="20px" height="18px">
+                  </span>
+                  </div>
+                  </mat-option>
+                  <mat-option value="Platinum">
+                    <div class="row">
+                    <span class="col-8">Platinum</span>
+                    <span class="col-4">
+                      <img src="./../../../assets/r6rank/plat.png" width="25px" height="20px">
+                    </span>
+                    </div>
+                  </mat-option>
+                  <mat-option value="Diamond">
+                    <div class="row">
+                      <span class="col-8">Diamond</span>
+                      <span class="col-4">
+                          <img src="./../../../assets/r6rank/diamond.png" width="18px" height="15px">
+                       </span>
+                       </div>
+                   </mat-option>
+            </mat-select>
+          </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Player 3</mat-label>
+          <input 
+          matInput 
+          type="text"
+          ngModel
+          name="p3"
+          #p3="ngModel"
+          required>
+          <mat-error *ngIf="!p3.valid && p3.touched">Required</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-select 
+            placeholder="Rank"
+            required
+            ngModel
+            name="p3rank"
+            >
+              <mat-option value="Unranked">
+                <div class="row">
+                <span class="col-8">Unranked</span>
+                <span class="col-4">
+                    <img src="./../../../assets/r6rank/unranked.png" width="18px" height="15px">
+                </span>
+                </div>
+              </mat-option>
+              <mat-option value="Copper">
+                <div class="row">
+                  <span class="col-8">Copper</span>
+                  <span class="col-4">
+                      <img src="./../../../assets/r6rank/copper.png" width="20px" height="18px">
+                  </span>
+                  </div>
+              </mat-option>
+                <mat-option value="Bronze">
+                  <div class="row">
+                   <span class="col-8">Bronze</span>
+                   <span class="col-4">
+                     <img src="./../../../assets/r6rank/bronze.png" width="20px" height="18px">
+                   </span>
+                   </div>
+                </mat-option>
+                <mat-option value="Silver">
+                  <div class="row">
+                  <span class="col-8">Silver</span>
+                  <span class="col-4">
+                    <img src="./../../../assets/r6rank/silver.png" width="20px" height="18px">
+                  </span>
+                  </div>
+                 </mat-option>
+                 <mat-option value="Gold">
+                   <div class="row">
+                 <span class="col-8">Gold</span> 
+                 <span class="col-4">
+                     <img src="./../../../assets/r6rank/gold.png" width="20px" height="18px">
+                  </span>
+                  </div>
+                  </mat-option>
+                  <mat-option value="Platinum">
+                    <div class="row">
+                    <span class="col-8">Platinum</span>
+                    <span class="col-4">
+                      <img src="./../../../assets/r6rank/plat.png" width="25px" height="20px">
+                    </span>
+                    </div>
+                  </mat-option>
+                  <mat-option value="Diamond">
+                    <div class="row">
+                      <span class="col-8">Diamond</span>
+                      <span class="col-4">
+                          <img src="./../../../assets/r6rank/diamond.png" width="18px" height="15px">
+                       </span>
+                       </div>
+                   </mat-option>
+            </mat-select>
+          </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Player 4</mat-label>
+          <input 
+          matInput
+          type="text"
+          name="p4"
+          ngModel
+          required
+          #p4="ngModel"
+          >
+          <mat-error *ngIf="!p4.valid && p4.touched">Required</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-select 
+            placeholder="Rank"
+            required
+            ngModel
+            name="p4rank"
+            >
+              <mat-option value="Unranked">
+                <div class="row">
+                <span class="col-8">Unranked</span>
+                <span class="col-4">
+                    <img src="./../../../assets/r6rank/unranked.png" width="18px" height="15px">
+                </span>
+                </div>
+              </mat-option>
+              <mat-option value="Copper">
+                <div class="row">
+                  <span class="col-8">Copper</span>
+                  <span class="col-4">
+                      <img src="./../../../assets/r6rank/copper.png" width="20px" height="18px">
+                  </span>
+                  </div>
+              </mat-option>
+                <mat-option value="Bronze">
+                  <div class="row">
+                   <span class="col-8">Bronze</span>
+                   <span class="col-4">
+                     <img src="./../../../assets/r6rank/bronze.png" width="20px" height="18px">
+                   </span>
+                   </div>
+                </mat-option>
+                <mat-option value="Silver">
+                  <div class="row">
+                  <span class="col-8">Silver</span>
+                  <span class="col-4">
+                    <img src="./../../../assets/r6rank/silver.png" width="20px" height="18px">
+                  </span>
+                  </div>
+                 </mat-option>
+                 <mat-option value="Gold">
+                   <div class="row">
+                 <span class="col-8">Gold</span> 
+                 <span class="col-4">
+                     <img src="./../../../assets/r6rank/gold.png" width="20px" height="18px">
+                  </span>
+                  </div>
+                  </mat-option>
+                  <mat-option value="Platinum">
+                    <div class="row">
+                    <span class="col-8">Platinum</span>
+                    <span class="col-4">
+                      <img src="./../../../assets/r6rank/plat.png" width="25px" height="20px">
+                    </span>
+                    </div>
+                  </mat-option>
+                  <mat-option value="Diamond">
+                    <div class="row">
+                      <span class="col-8">Diamond</span>
+                      <span class="col-4">
+                          <img src="./../../../assets/r6rank/diamond.png" width="18px" height="15px">
+                       </span>
+                       </div>
+                   </mat-option>
+            </mat-select>
+          </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Player 5</mat-label>
+          <input 
+          matInput
+          type="text"
+          name="p5"
+          ngModel
+          #p5="ngModel"
+          required>
+          <mat-error *ngIf="!p5.valid && p5.touched">Required</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-select 
+            placeholder="Rank"
+            required
+            ngModel
+            name="p5rank"
+            >
+              <mat-option value="Unranked">
+                <div class="row">
+                <span class="col-8">Unranked</span>
+                <span class="col-4">
+                    <img src="./../../../assets/r6rank/unranked.png" width="18px" height="15px">
+                </span>
+                </div>
+              </mat-option>
+              <mat-option value="Copper">
+                <div class="row">
+                  <span class="col-8">Copper</span>
+                  <span class="col-4">
+                      <img src="./../../../assets/r6rank/copper.png" width="20px" height="18px">
+                  </span>
+                  </div>
+              </mat-option>
+                <mat-option value="Bronze">
+                  <div class="row">
+                   <span class="col-8">Bronze</span>
+                   <span class="col-4">
+                     <img src="./../../../assets/r6rank/bronze.png" width="20px" height="18px">
+                   </span>
+                   </div>
+                </mat-option>
+                <mat-option value="Silver">
+                  <div class="row">
+                  <span class="col-8">Silver</span>
+                  <span class="col-4">
+                    <img src="./../../../assets/r6rank/silver.png" width="20px" height="18px">
+                  </span>
+                  </div>
+                 </mat-option>
+                 <mat-option value="Gold">
+                   <div class="row">
+                 <span class="col-8">Gold</span> 
+                 <span class="col-4">
+                     <img src="./../../../assets/r6rank/gold.png" width="20px" height="18px">
+                  </span>
+                  </div>
+                  </mat-option>
+                  <mat-option value="Platinum">
+                    <div class="row">
+                    <span class="col-8">Platinum</span>
+                    <span class="col-4">
+                      <img src="./../../../assets/r6rank/plat.png" width="25px" height="20px">
+                    </span>
+                    </div>
+                  </mat-option>
+                  <mat-option value="Diamond">
+                    <div class="row">
+                      <span class="col-8">Diamond</span>
+                      <span class="col-4">
+                          <img src="./../../../assets/r6rank/diamond.png" width="18px" height="15px">
+                       </span>
+                       </div>
+                   </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div *ngIf="userLogin ; else showLogin">
+              <button mat-raised-button color="primary" type="submit" [disabled]="!checkValid()">Submit</button>
+            </div>
+            <ng-template #showLogin>
+              <div class="signin">
+                <img src="./../../assets/googleSignIn.png" (click)="login()"class="signimg" matTooltip="Please login with to continue">
+                <!-- <div class="text-muted signtxt">Please login with to continue</div> -->
+              </div>
+            </ng-template>
+      </form>
+      
+      

@@ -1,0 +1,347 @@
+  .caption{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight:bolder;
+  }
+  .cont{
+      width: 100%;
+  }
+  @media screen and (max-width: 577px){
+    img{
+        width: 100%;
+        height: 75vh;
+        object-fit:cover;
+    }
+  }
+  @media screen and (min-width: 580px){
+    .fixedmargin{
+        background: #000000;
+    }
+}
+  @media screen and (max-width: 580px){
+    .fixedmargin{
+        background: #000000;
+    }
+}
+@media screen and (min-width: 1000px){
+    .homeimg{
+        margin-top: 10vh;
+        object-fit: cover;
+        height: 107vh;
+        width: 100%;
+    }
+    .gamesimg{
+        height: 42vh;
+        opacity: 0.95;
+        width: 45%;
+        border-radius: 5px;
+
+    }
+
+    .gamesimg:hover{
+        opacity: 1;
+        box-shadow: 0 16px 25px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .rimg{
+        margin-right: 5%;
+    }
+    .limg{
+        margin-right: 5%;
+    }
+    .map{
+        width: 50%;
+        float: left;
+    }
+    .maptxt{
+        width: 50%;
+        height: 450px;
+        float: left;
+    }
+    .venue{
+        display: inline;
+        clear: both;
+    }
+    .ven{
+        margin-top: 30%;
+        width: 100%;
+        text-align: center;
+        font-family: 'Audiowide', cursive;
+        font-size: 45px;
+        font-weight: bold;
+        cursor: pointer;
+        
+    }
+    iframe{
+        height: 50vh;
+        width: 40vw;
+    }
+    .footer{
+        margin-top: 50vh;
+        height: 20vh;
+    }
+   
+    
+   
+}
+@media screen and (min-width: 590px) and (max-width:1000px){
+    .games{
+        width: 100%;
+    }
+    .homeimg{
+        margin-top: 10vh;
+        object-fit: cover;
+        height: 97vh;
+        width: 100%;
+    }
+    .gamesimg{
+        height: 42vh;
+        opacity: 0.95;
+        width: 45%;
+        border-radius: 5px;
+    }
+    .gamesimg:hover{
+        opacity: 1;
+        box-shadow: 0 16px 25px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .rimg{
+        margin-right: 3%;
+    }
+    .limg{
+        margin-right: 3%;
+    }
+    .ven{
+        // margin-top: 30%;
+        margin-bottom: 5%;
+        width: 100%;
+        text-align: center;
+        font-family: 'Audiowide', cursive;
+        font-size: 45px;
+        font-weight: bold;
+        cursor: pointer;
+        
+    }
+    iframe{
+        height: 40vh;;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sptxt{
+        text-align: center;
+        font-size: 40px;
+        padding: 7vw;
+        margin-left: auto;
+        margin-left: auto;
+        font-family: 'Fredoka One', cursive;
+        display: block;
+    }
+    .footer{
+        margin-top: 5vh;
+    }
+    
+   
+   
+    
+}
+@media screen and (max-width: 590px){
+    .homeimg{
+        height: 100vh;
+        object-fit: cover;
+        width: 100%
+    }
+    .gamesimg{
+        height: 42vh;
+        margin-right:3vw;
+        width: 90vw;
+        box-shadow: 3px 5px 5px 3px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+    }
+    .rimg{
+        margin-top: 5vh;
+    }
+    .ven{
+        margin-bottom: 5%;
+        width: 100%;
+        text-align: center;
+        font-family: 'Audiowide', cursive;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        
+    }
+    iframe{
+        height: 40vh;;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer{
+        height: 30vh;
+    }
+}
+.gametxt{
+    text-align: center;
+    font-size: 40px;
+    padding: 7vw;
+    font-family: 'Fredoka One', cursive;
+}
+.sptxt{
+    height: 10vh;
+    width: 10vw;
+    text-align: center;
+    font-size: 40px;
+    padding: 7vw;
+    margin-left: auto;
+    margin-left: auto;
+    font-family: 'Fredoka One', cursive;
+    display: block;
+}
+.footer {
+    position: static;
+    height: 30vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+  }
+  .contacttxt{
+      text-align: center;
+      width: 100%;
+      font-family: 'Roboto Mono', monospace;
+      font-weight: bold;
+      margin-top: 3vh;
+      font-size: 25px;
+  }
+  .splogo{
+      object-fit: fill;
+  }
+  
+  @media screen and (max-width: 700px){
+    .splogoam{
+        border-radius: 5px;
+        margin-right: 10%;
+        margin-left: 10%;
+        width: 80%;
+        height: 30vh;
+        object-fit: unset;
+  
+    }
+    .amlogo{
+        margin-top: 5%;
+        width: 100%;
+    }
+    .mdlogo{
+        margin-top: 5%;
+        width: 100%
+
+    }
+    .bnlogo{
+        margin-top: 5%;
+        width: 100%
+
+    }
+    .splogobe{
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 80%;
+    height: 20vh;
+    object-fit: fill;
+  
+    }
+    .splogomd{
+        margin-left: 5%;
+        margin-right: 10%;
+        object-fit: fill;
+        height: 12vh;
+        width: 90%;
+  
+    }
+    .momlogo{
+        margin-top: 5%;
+        width: 100%;
+    }
+    .splogomom{
+        border-radius: 5px;
+        margin-right: 10%;
+        margin-left: 10%;
+        width: 80%;
+        height: 30vh;
+        object-fit: unset;
+    }
+    .gzlogo{
+        width: 100%;
+    }
+    .splogogz{
+        margin-right: 10%;
+        margin-left: 10%;
+        width: 80%;
+        height: 30vh;
+        object-fit:cover;
+    }
+
+  }
+  @media screen and (min-width: 700px){
+    .col1{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+    }
+    .gzlogo{
+        width: 100%;
+        height: 100%;
+
+    }
+    .splogogz{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+    .momlogo{
+        width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .splogomom{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .col2{
+        margin-top: 5vh;
+        height: 30vh;
+        display: flex;
+    }
+    .amlogo{
+        width: 33%;
+        height: 100%
+    }
+    .splogoam{
+        width: 100%;
+        height: 100%;
+        object-fit:contain;
+
+    }
+    .bnlogo{
+        width: 33%;
+        height: 100%;
+         
+    }
+    .splogobe{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .mdlogo{
+        width: 33%;
+        height: 100%;
+    }
+    .splogomd{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .headtxt{
+        font-size: 60px;
+    }
+  }

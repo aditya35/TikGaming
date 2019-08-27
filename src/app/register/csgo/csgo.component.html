@@ -1,0 +1,155 @@
+      <form #csForm="ngForm" (ngSubmit)="onSubmit(csForm)">
+        <mat-form-field appearance="fill">
+            <mat-label>Team Name</mat-label>
+            <input 
+            matInput 
+            type="text"
+            name="teamname"
+            ngModel
+            #teamname="ngModel"
+            required>
+            <mat-error *ngIf="!teamname.valid && teamname.touched">Required</mat-error>
+          </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Team leader</mat-label>
+          <input 
+          matInput
+          type="text"
+          name="p1"
+          ngModel
+          required
+          #p1="ngModel"
+         >
+         <mat-error *ngIf="!p1.valid && p1.touched">Required</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-select placeholder="Rank" #rank required ngModel name="p1rank">
+              <mat-option value="Unranked">Unranked</mat-option>
+              <mat-option value="Silver">Silver</mat-option>
+              <mat-option value="Nova">Nova</mat-option>
+              <mat-option value="Master Guardian">Master Guardian</mat-option>
+              <mat-option value="legendary">Legendary</mat-option>
+              <mat-option value="supreme">Supreme</mat-option>
+              <mat-option value="elite">Elite</mat-option>
+            </mat-select>
+          </mat-form-field>
+        <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Phone No.</mat-label>
+          <input
+          matInput
+          type="tel"
+          name="phone"
+          ngModel
+          required
+          minlength="10"
+          maxlength="10"
+          #phn="ngModel"
+          pattern="[0-9]{0,10}"
+          >
+          <mat-error *ngIf="!phn.valid && phn.touched">Enter a Valid Phone Number</mat-error>
+          <mat-hint>Please Make Sure this number has active WhatsApp and sms</mat-hint>
+        </mat-form-field>
+        </p>
+        <mat-form-field appearance="outline">
+          <mat-label>Player 2</mat-label>
+          <input 
+          matInput 
+          type="text"
+          name="p2"
+          ngModel
+          required
+          #p2="ngModel"
+          >
+          <mat-error *ngIf="!p2.valid && p2.touched">Required</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-select placeholder="Rank" #rank required ngModel name="p2rank">
+              <mat-option value="Unranked">Unranked</mat-option>
+              <mat-option value="Silver">Silver</mat-option>
+              <mat-option value="Nova">Nova</mat-option>
+              <mat-option value="Master Guardian">Master Guardian</mat-option>
+              <mat-option value="legendary">Legendary</mat-option>
+              <mat-option value="supreme">Supreme</mat-option>
+              <mat-option value="elite">Elite</mat-option>
+            </mat-select>
+          </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Player 3</mat-label>
+          <input 
+          matInput 
+          type="text"
+          name="p3"
+          ngModel
+          required
+          #p3="ngModel"
+          >
+          <mat-error *ngIf="!p3.valid && p3.touched">Required</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-select placeholder="Rank" #rank required ngModel name="p3rank">
+                <mat-option value="Unranked">Unranked</mat-option>
+                <mat-option value="Silver">Silver</mat-option>
+                <mat-option value="Nova">Nova</mat-option>
+                <mat-option value="Master Guardian">Master Guardian</mat-option>
+                <mat-option value="legendary">Legendary</mat-option>
+                <mat-option value="supreme">Supreme</mat-option>
+                <mat-option value="elite">Elite</mat-option>
+            </mat-select>
+          </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Player 4</mat-label>
+          <input 
+          matInput 
+          type="text"
+          name="p4"
+          ngModel
+          required
+          #p4="ngModel"
+          >
+          <mat-error *ngIf="!p4.valid && p4.touched">Required</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-select placeholder="Rank" #rank required ngModel name="p4rank">
+                <mat-option value="Unranked">Unranked</mat-option>
+                <mat-option value="Silver">Silver</mat-option>
+                <mat-option value="Nova">Nova</mat-option>
+                <mat-option value="Master Guardian">Master Guardian</mat-option>
+                <mat-option value="legendary">Legendary</mat-option>
+                <mat-option value="supreme">Supreme</mat-option>
+                <mat-option value="elite">Elite</mat-option>
+                </mat-select>
+          </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Player 5</mat-label>
+          <input 
+          matInput 
+          type="text"
+          name="p5"
+          #p5="ngModel"
+          required
+          ngModel
+          >
+          <mat-error *ngIf="!p5.valid && p5.touched">Required</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-select placeholder="Rank" #rank required ngModel name="p5rank">
+                <mat-option value="Unranked">Unranked</mat-option>
+                <mat-option value="Silver">Silver</mat-option>
+                <mat-option value="Nova">Nova</mat-option>
+                <mat-option value="Master Guardian">Master Guardian</mat-option>
+                <mat-option value="legendary">Legendary</mat-option>
+                <mat-option value="supreme">Supreme</mat-option>
+                <mat-option value="elite">Elite</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div *ngIf="userLogin; else showLogin">
+              <button mat-raised-button color="primary" type="submit" [disabled]="!checkValid()">Submit</button>
+            </div>
+            <ng-template #showLogin>
+              <div class="signin">
+                <img src="./../../assets/googleSignIn.png" (click)="login()"class="signimg" matTooltip="Please login with to continue">
+                <!-- <div class="text-muted signtxt">Please login with to continue</div> -->
+              </div>
+            </ng-template>
+      </form>

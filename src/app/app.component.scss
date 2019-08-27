@@ -1,0 +1,87 @@
+example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(255, 255, 255);
+  }
+  mat-sidenav ,mat-sidenav-container,mat-sidenav-content{
+    height: 100%;
+  
+  }
+  .btn-tool {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+  }
+  mat-toolbar{
+    height: 80px;
+  }
+  mat-sidenav{
+    width: 220px;
+  }
+  .logoText, .brand-text{
+      margin-left: 20px;
+      font-family: 'Patua One', cursive;
+      // font-family: 'Roboto Mono', monospace;
+      font-size: 27px;
+      cursor: pointer;
+  }
+  .toolbar-fill{
+    flex: 1 1 auto;
+  }
+  .example-fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
+  .brand-text{
+    // margin-left: 45px;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  .style13 {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #8c8b8b inset;
+  }
+  .btn-tool{
+      font-size: 18px;
+  }
+  .activated-pr{
+    background: #383838;
+    color: white;
+    height: 100%;
+  }
+  .activated-bl{ 
+    border: 2px solid #d4d4d4;
+    opacity: 0.85;
+    filter: alpha(opacity=85);
+    border-radius: 100px;
+  }
+  .activated-bl:hover{ 
+    border: 2px solid #d4d4d4;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    border-radius: 100px;
+  }
+  mat-list-item{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+  }
+  mat-list-item:hover{
+    box-shadow: 10px #8c8b8b inset;
+
+  }
+  .btn-tool{
+    opacity: 0.85;
+    filter: alpha(opacity=85);
+  }
+  .btn-tool:hover{
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  .fixedTop{
+    z-index: 999;
+    position: fixed;
+  }
