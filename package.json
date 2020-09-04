@@ -24,7 +24,7 @@
     "@angular/router": "~7.1.0",
     "@angular/service-worker": "~7.1.0",
     "@ng-bootstrap/ng-bootstrap": "^4.0.2",
-    "airtable": "0.5.8",
+    "airtable": "0.7.2",
     "angular-captcha": "^3.4.1",
     "bootstrap": "^4.2.1",
     "core-js": "^2.5.4",
